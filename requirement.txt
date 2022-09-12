@@ -1,4 +1,6 @@
-brew install portaudio
-pip install pyAudio
+brew install portaudio || sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+
+pip3 install pyAudio
 
 
+pip3 install SpeechRecognition
