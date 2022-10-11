@@ -1,6 +1,15 @@
 brew install portaudio || sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
-
 pip3 install pyAudio
-
-
 pip3 install SpeechRecognition
+pip3 install confluent-kafka
+pip3 install python-dotenv
+pip 3install scikit-learn
+
+pip3 install spacy
+pip3 install tensorflow
+pip3 install seaborn
+pip3 install tensorflow_decision_forests
+
+pip3 install wurlitzer
+
+pip3 install ipython
