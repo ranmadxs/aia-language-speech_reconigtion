@@ -3,7 +3,9 @@ pip3 install pyAudio
 pip3 install SpeechRecognition
 pip3 install confluent-kafka
 pip3 install python-dotenv
-pip 3install scikit-learn
+pip3 install scikit-learn
+pip3 install poetry
+
 
 pip3 install spacy
 pip3 install tensorflow
