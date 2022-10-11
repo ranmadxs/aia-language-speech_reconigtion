@@ -94,7 +94,10 @@ optional = false
 python-versions = ">=3.8"
 
 [package.dependencies]
-numpy = {version = ">=1.21.0", markers = "python_version >= \"3.10\""}
+numpy = [
+    {version = ">=1.21.0", markers = "python_version >= \"3.10\""},
+    {version = ">=1.20.3", markers = "python_version < \"3.10\""},
+]
 python-dateutil = ">=2.8.1"
 pytz = ">=2020.1"
 
@@ -307,8 +310,8 @@ python-versions = ">=3.7"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.10"
-content-hash = "ab6692d890bae9bbbbe1e021e14aea135d955e7c1e02f7bdca07c4b26fac719c"
+python-versions = "^3.8.5"
+content-hash = "06f62364a521adb8e80de25e79b6a6d506c4069f155597642ae9d7c7bc82b07a"
 
 [metadata.files]
 attrs = [

@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "aia-language-speech_reconigtion"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8.5"
 colorama = "^0.4.5"
 SpeechRecognition = "3.8.1"
 confluent-kafka = "1.9.2"
