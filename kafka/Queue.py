@@ -9,7 +9,8 @@ from datetime import datetime
 load_dotenv()
 
 class QueueProducer:
-    def __init__(self, topic):
+    def __init__(self, topic, version = None):
+        self.version = version
         self.topic = topic
         self.conf = {
             'bootstrap.servers': os.environ['CLOUDKARAFKA_BROKERS'],
@@ -27,11 +28,21 @@ class QueueProducer:
         objMessage = {
             "head": {
                 "producer": "aia-language-speech_recognition",
-                "creationDate": now.strftime("%Y-%m-%d %H:%M:%S")
+                "creationDate": now.strftime("%Y-%m-%d %H:%M:%S"),
+                "version": self.version
             }, 
-            "body": bodyObject
+            "body": bodyObject,
+            "breadcrumb": [{
+                "creationDate": now.strftime("%Y-%m-%d %H:%M:%S"),
+                "name": "aia-language-speech_reconigtion"
+            }],
+            "status": {
+                "creationDate": now.strftime("%Y-%m-%d %H:%M:%S"),
+                "code": "SEND",
+                "description": "AIA new message arrived"
+            }
         }
-        return str(objMessage)
+        return objMessage
 
     def sendMsg(self, bodyObject, callback_queue = None):
         objStr = self.msgBuilder(bodyObject)
@@ -39,6 +50,7 @@ class QueueProducer:
 
     def send(self, msg, callback_queue = None):
         print(msg)
+        msg = str(msg)
         self.producer.produce(self.topic, msg.rstrip(), callback=callback_queue)
         self.producer.poll(0)
     

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aia-language-speech-reconigtion"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Edgar Rodrigo Sanchez De Gracia <edgr.sanchez@mercadolibre.cl>"]
 readme = "README.md"

@@ -15,3 +15,4 @@ pip3 install tensorflow_decision_forests
 pip3 install wurlitzer
 
 pip3 install ipython
+pip3 install pymongo
