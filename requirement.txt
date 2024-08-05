@@ -16,3 +16,6 @@ pip3 install wurlitzer
 
 pip3 install ipython
 pip3 install pymongo
+pip3 install openai
+
+pip3 install simplenlg

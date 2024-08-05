@@ -9,6 +9,7 @@ EXP,Mi nombre es Edgar
 MOD,modo análisis
 CMD,establecer alarma
 CMD,ejecutar encender bomba
+CMD,modo warhammer space marine rhino
 MOD,modo offline
 EXP,ni modo nada que hacer
 EXP,ni modo nada que hacer
@@ -29,3 +30,6 @@ PRG,a qué hora nos vamos a ir
 EXP,eres linda
 EXP,buenos días
 PRG,qué hora es
+CMD,leer correo
+CMD,leer email
+CMD,leer mail
