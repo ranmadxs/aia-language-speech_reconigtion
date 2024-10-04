@@ -1,5 +1,4 @@
-FROM python:3.9-slim
-
+FROM python:3.11.7
 # Instalar Poetry
 RUN pip install poetry
 
