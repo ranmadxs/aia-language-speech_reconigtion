@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aia-language-speech-reconigtion"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["Edgar Rodrigo Sanchez De Gracia <edgr.sanchez@mercadolibre.cl>"]
 readme = "README.md"
@@ -15,8 +15,8 @@ pandas = "2.1.2"
 PyAudio = "0.2.13"
 coverage = "^7.6.0"
 pocketsphinx = "^5.0.3"
-aia_utils = "^0.2.1"
 SpeechRecognition = "^3.10.4"
+aia_utils = "^0.3.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.3"

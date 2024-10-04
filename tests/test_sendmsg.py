@@ -13,7 +13,7 @@ import speech_recognition as sr
 #poetry run pytest tests/test_sendmsg.py::test_send -s
 def test_send():
     print ("send msg")
-    AUDIO_FILE =  "resources/test/audio_sampling/encender_bomba.wav"
+    AUDIO_FILE =  "resources/test/audio_sampling/wh40k_tactical.wav"
     r = sr.Recognizer()
     with sr.AudioFile(AUDIO_FILE) as source:
         # read the entire audio file

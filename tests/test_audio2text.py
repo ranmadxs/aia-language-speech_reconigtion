@@ -2,7 +2,7 @@ import speech_recognition as sr
 
 # obtain path to "english.wav" in the same folder as this script
 from os import path
-AUDIO_FILE =  "resources/test/audio_sampling/wh40k_sm.wav"
+AUDIO_FILE =  "resources/test/audio_sampling/wh40k_tactical.wav"
 
 #poetry run pytest tests/test_audio2text.py::test_audio2text -s
 def test_audio2text():
