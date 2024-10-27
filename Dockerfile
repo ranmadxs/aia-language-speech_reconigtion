@@ -1,4 +1,4 @@
-FROM python:3.13
+FROM python:3.11.7
 # Instalar Poetry
 RUN pip install poetry
 
